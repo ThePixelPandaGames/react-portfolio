@@ -4,7 +4,6 @@ import './styles.css'; // Add this line to import the custom styles
 import flappyBirdPic from './assets/pictures/flappy_bird_thumbnail.png';
 import spaceJumpPic from './assets/pictures/spaceJump_thumbnail.png';
 import rubaPic from './assets/pictures/ruba_thumbnail.png';
-import { CSSTransition } from 'react-transition-group';
 
 import profilPic from './assets/pictures/profilPic.jpg';
 import { useState } from 'react';
