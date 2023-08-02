@@ -8,6 +8,9 @@ import rubaPic from './assets/pictures/ruba_thumbnail.png';
 import profilPic from './assets/pictures/profilPic.jpg';
 import { useState } from 'react';
 
+import CVFile from './assets/AntonioPalumbo_CV.pdf'; // Replace with the path to your CV file
+import icon from "./assets/pictures/download_icon.png";
+
 const projects = [
   {
     title: 'RUBA (in development) ',
@@ -62,6 +65,26 @@ const education = [
   },
 ];
 
+const CV: React.FC = () => {
+  const handleDownloadCV = () => {
+    const link = document.createElement('a');
+    link.href = CVFile;
+    link.download = 'AntonioPalumbo_CV.pdf';
+    link.click();
+  };
+
+  return (
+    <div>
+      <p>Unleash the gaming magic! Download my CV!</p>
+      <button   className="button-turquoise mt-2" onClick={handleDownloadCV}>  
+      <img className='cv-icon' src={icon} alt="Download CV" />
+      Summon CV Magic!
+        </button>
+    </div>
+  );
+};
+
+
 
 
 const App = () => {
@@ -83,8 +106,8 @@ const App = () => {
 
       <div className="section-divider"></div>
 
-
-      <section className="mb-4">
+<div className='bio-container'>
+      <section className="mb-4 bio-section">
         <h2>About Me</h2>
         <p>
           Hey there! I'm Antonio Palumbo, a Game Developer on an exciting journey of self-learning.
@@ -122,6 +145,10 @@ const App = () => {
         </div>
       </section>
 
+      <div className='cv-section'>
+      <CV></CV>
+      </div>
+      </div>
       <div className="section-divider"></div>
 
 
