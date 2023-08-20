@@ -200,7 +200,15 @@ const App = () => {
 
       <div className="section-divider"></div>
 
+      <section className="mb-4 bio-section">
+        <h2>Game Jams</h2>
+        <p>
+          In a team of 5 we created a game in a week for the 1-Bit-Game-Jam. The Theme was "light & dark". Check out what the result was!
+        </p>
+      <iframe frameBorder="0" src="https://itch.io/embed/2218370?linkback=true" width="552" height="167"><a href="https://kiriuozoru.itch.io/in-between">In Between by KiriuOzoru, ThePixelPanda, huangkaiyi, EasyGames Studio</a></iframe> 
+</section>
 
+      <div className="section-divider"></div>
 
       <section>
         <h2>Projects</h2>
