@@ -235,6 +235,7 @@ const App = () => {
 
       <section className="mb-5">
         <h2>Unity Learn Profile</h2>
+        <div className='mb-4'>
         <p>
           Check out my Unity Learn profile to see my learning journey and completed courses in
           game development:
@@ -242,7 +243,16 @@ const App = () => {
         <a href={"https://learn.unity.com/u/649043d1edbc2a01ba9905b8/?tab=profile"} target="_blank" rel="noopener noreferrer">
           My Unity Learn Profile
         </a>
-      </section>
+        </div>
+        <div>
+        <p>
+          Here you can have a look at my credly badges:
+        </p>
+        <a href={"https://www.credly.com/users/antonio-palumbo.385fabc7/badges"} target="_blank" rel="noopener noreferrer">
+          My badges
+        </a>
+        </div>
+        </section>
 
       <div className="section-divider"></div>
 
